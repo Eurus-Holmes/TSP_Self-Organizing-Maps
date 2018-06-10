@@ -17,14 +17,14 @@ which are included in the Anaconda distribution by default) are needed. In case
 you are not using Anaconda, you can install all the dependencies with:
 
 #+BEGIN_SRC sh
-pip install requirements.txt
+cd som-tsp
+sudo pip3 install -r requirements.txt
 #+END_SRC
 
 To run the code, simply execute:
 
 #+BEGIN_SRC sh
-cd som-tsp
-python src/main.py assets/<instance>.tsp
+python3 src/main.py assets/<instance>.tsp
 #+END_SRC
 
 The images generated will be stored in the =diagrams= folder. Using a tool like
@@ -32,6 +32,7 @@ The images generated will be stored in the =diagrams= folder. Using a tool like
 running:
 
 #+BEGIN_SRC sh
+cd diagrams
 convert -delay 10 -loop 0 *.png animation.gif
 #+END_SRC
 
