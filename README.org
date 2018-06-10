@@ -32,6 +32,7 @@ The images generated will be stored in the =diagrams= folder. Using a tool like
 running:
 
 #+BEGIN_SRC sh
+cd diagrams
 convert -delay 10 -loop 0 *.png animation.gif
 #+END_SRC
 
